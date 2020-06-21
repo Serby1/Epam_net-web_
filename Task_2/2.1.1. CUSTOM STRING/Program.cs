@@ -10,7 +10,7 @@ namespace _2._1._1.CUSTOM_STRING
     {
         private char[] chars;
 
-        //конструкторы классы
+        //конструкторы класса
         public MyString(string str)
         {
             chars = str.ToCharArray();
@@ -20,17 +20,17 @@ namespace _2._1._1.CUSTOM_STRING
             this.chars = chars;
         }
 
-        //свойство для полечения длинны массива(строки)
-        public int Length => chars.Length;
+        //метод для получения длины массива(строки)
+        public int Length() => chars.Length;
 
         //сравнение по длине строк
         public int CompareTo(MyString str)
         {
-            if (Length > str.Length)
+            if (Length() > str.Length())
             {
                 return 1;
             }
-            else if (Length < str.Length)
+            else if (Length() < str.Length())
             {
                 return -1;
             }
@@ -43,9 +43,9 @@ namespace _2._1._1.CUSTOM_STRING
         //посимвольное сравнение равных по длине строк
         public int Compare(MyString str)
         {
-            if (Length == str.Length)
+            if (Length() == str.Length())
             {
-                for (int i = 0; i < Length; ++i)
+                for (int i = 0; i < Length(); ++i)
                 {
                     if (chars[i] > str[i])
                     {
@@ -60,29 +60,29 @@ namespace _2._1._1.CUSTOM_STRING
             }
             else
             {
-                throw new ArgumentOutOfRangeException($"Strings are not equal!");
+                throw new ArgumentOutOfRangeException("Strings are not equal!");
             }
         }
 
         public MyString Concatenation(MyString str)
         {
 
-            int resultLength = Length + str.Length;
+            int resultLength = Length() + str.Length();
             char[] resultChars = new char[resultLength];
-            for (int i = 0; i < Length; ++i)
+            for (int i = 0; i < Length(); ++i)
             {
                 resultChars[i] = chars[i];
             }
-            for (int i = Length; i < resultLength; ++i)
+            for (int i = Length(); i < resultLength; ++i)
             {
-                resultChars[i] = str[i - Length];
+                resultChars[i] = str[i - Length()];
             }
             return new MyString(resultChars);
         }
 
         public int Find(char symbol)
         {
-            for (int i = 0; i < Length; ++i)
+            for (int i = 0; i < Length(); ++i)
             {
                 if (chars[i] == symbol)
                 {
@@ -95,7 +95,7 @@ namespace _2._1._1.CUSTOM_STRING
         public override string ToString()
         {
             string str = "";
-            for (int i = 0; i < Length; ++i)
+            for (int i = 0; i < Length(); ++i)
             {
                 str += chars[i];
             }
@@ -106,10 +106,10 @@ namespace _2._1._1.CUSTOM_STRING
 
         public MyString Reverse()
         {
-            char[] reverseArray = new char[Length];
-            for (int i = 0; i < Length; ++i)
+            char[] reverseArray = new char[Length()];
+            for (int i = 0; i < Length(); ++i)
             {
-                reverseArray[i] = chars[Length - i - 1];
+                reverseArray[i] = chars[Length() - i - 1];
             }
             return new MyString(reverseArray);
         }
