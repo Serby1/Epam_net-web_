@@ -29,9 +29,19 @@ namespace _3._1._1.WEAKEST_LINK
             {
                 Console.WriteLine("Invalid value entered");
             }
-
+            Console.WriteLine("Введите номер игрока, который будет вычеркиваться:");
+            int index;
+            input = Console.ReadLine();
+            result = int.TryParse(input, out index);
+            if (result)
+            { }
+            else
+            {
+                Console.WriteLine("Invalid value entered");
+            }
+            Console.WriteLine("Введите имена игроков:");
             Logic game = new Logic(createList(count));
-            game.Play(3);
+            game.Play(index);
             Console.ReadLine();
         }
     }
