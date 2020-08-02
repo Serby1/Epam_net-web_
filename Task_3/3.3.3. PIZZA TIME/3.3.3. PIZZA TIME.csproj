@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A1D683CB-B01A-455F-8C9D-821E54607108}</ProjectGuid>
+    <ProjectGuid>{80A646FF-77C4-4D9D-AE0C-1141E8A98558}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_3._3._1.SUPER_ARRAY</RootNamespace>
-    <AssemblyName>_3._3._1.SUPER_ARRAY</AssemblyName>
+    <RootNamespace>_3._3._3.PIZZA_TIME</RootNamespace>
+    <AssemblyName>_3._3._3.PIZZA_TIME</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,12 +43,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Customer\Customer.cs" />
+    <Compile Include="Pizzeria\Order.cs" />
+    <Compile Include="Pizzeria\Pizza\AbstractPizza.cs" />
+    <Compile Include="Pizzeria\Pizza\CheesePizze.cs" />
+    <Compile Include="Pizzeria\Pizza\HawaiianPizza.cs" />
+    <Compile Include="Pizzeria\Pizza\MeatPizza.cs" />
+    <Compile Include="Pizzeria\Pizza\PepperoniPizza.cs" />
+    <Compile Include="Pizzeria\Pizza\TypePizze.cs" />
+    <Compile Include="Pizzeria\Pizzeria.cs" />
+    <Compile Include="Pizzeria\Workers\AbstractWorker.cs" />
+    <Compile Include="Pizzeria\Workers\Cashier.cs" />
+    <Compile Include="Pizzeria\Workers\Cook.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Super_array.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

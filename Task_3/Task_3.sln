@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.3.2. SUPER STRING", "3.3.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.3.1. SUPER ARRAY", "3.3.1. SUPER ARRAY\3.3.1. SUPER ARRAY.csproj", "{A1D683CB-B01A-455F-8C9D-821E54607108}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.3.3. PIZZA TIME", "3.3.3. PIZZA TIME\3.3.3. PIZZA TIME.csproj", "{80A646FF-77C4-4D9D-AE0C-1141E8A98558}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{A1D683CB-B01A-455F-8C9D-821E54607108}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1D683CB-B01A-455F-8C9D-821E54607108}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1D683CB-B01A-455F-8C9D-821E54607108}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80A646FF-77C4-4D9D-AE0C-1141E8A98558}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80A646FF-77C4-4D9D-AE0C-1141E8A98558}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80A646FF-77C4-4D9D-AE0C-1141E8A98558}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80A646FF-77C4-4D9D-AE0C-1141E8A98558}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
